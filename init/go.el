@@ -31,6 +31,7 @@
   (local-set-key (kbd "C-c C-k") 'godoc)
 
   ;; Other
+  (autopair-mode 1)
   (go-eldoc-setup)
   (go-oracle-mode)
   (setq tab-width 8)
