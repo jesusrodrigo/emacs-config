@@ -31,7 +31,7 @@
 (load custom-file)
 
 ;; Server
-;(server-start)
+(server-start)
 
 (load "~/.emacs.d/init/misc")
 (load "~/.emacs.d/init/frames")
