@@ -6,8 +6,6 @@
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 
-(load "$GOPATH/src/code.google.com/p/go.tools/cmd/oracle/oracle.el")
-
 ;; Hooks
 (add-hook 'go-mode-hook 'my-go-hook)
 (add-hook 'before-save-hook 'gofmt-before-save)
@@ -33,7 +31,6 @@
   ;; Other
   (autopair-mode 1)
   (go-eldoc-setup)
-  (go-oracle-mode)
   (setq tab-width 8)
   (setq show-trailing-whitespace t)
   (local-set-key (kbd "M-.") 'godef-jump))

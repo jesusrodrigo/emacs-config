@@ -33,9 +33,9 @@
 (global-set-key [M-down-mouse-1] 'mouse-drag-secondary-pasting)
 (global-set-key [M-S-down-mouse-1] 'mouse-drag-secondary-moving)
 
-;;; ffap
-(require 'ffap)
-(ffap-bindings)
+;; ;;; ffap
+;; (require 'ffap)
+;; (ffap-bindings)
 
 (transient-mark-mode 1)
 (tool-bar-mode 0)
@@ -45,3 +45,12 @@
 ;;; mic paren
 (require 'mic-paren)
 (paren-activate)
+
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-use-filename-at-point 'guess)
+;(setq ido-file-extensions-order '(".org" ".txt" ".py" ".emacs" ".xml" ".el" ".ini" ".cfg" ".cnf"))
+(ido-mode t)
+(require 'ido-vertical-mode)
+(ido-vertical-mode t)
