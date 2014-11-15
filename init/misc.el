@@ -33,10 +33,6 @@
 (global-set-key [M-down-mouse-1] 'mouse-drag-secondary-pasting)
 (global-set-key [M-S-down-mouse-1] 'mouse-drag-secondary-moving)
 
-;;; ffap
-(require 'ffap)
-(ffap-bindings)
-
 (transient-mark-mode 1)
 (tool-bar-mode 0)
 

@@ -35,6 +35,7 @@
 
 (load "~/.emacs.d/init/misc")
 (load "~/.emacs.d/init/frames")
+(load "~/.emacs.d/init/ido")
 (load "~/.emacs.d/init/gnus")
 
 ;;; Teclas globales
@@ -76,6 +77,7 @@
 (load "~/.emacs.d/init/perl")
 (load "~/.emacs.d/init/lisp")
 (load "~/.emacs.d/init/scheme")
+(load "~/.emacs.d/init/racket")
 ;(load "~/.emacs.d/init/clojure")
 ;(load "~/.emacs.d/init/lua")
 ;(load "~/.emacs.d/init/erlang")
