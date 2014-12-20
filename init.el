@@ -63,11 +63,13 @@
 ;; Buffer switch (lo tengo que cambiar de sitio...)
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
+;; Company
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; Subfiles
 (load "~/.emacs.d/init/eshell")
 (load "~/.emacs.d/init/dired")
 ; prog modes
-(load "~/.emacs.d/init/ac")
 (load "~/.emacs.d/init/python")
 (load "~/.emacs.d/init/paredit")
 (load "~/.emacs.d/init/emacs-lisp")
@@ -76,13 +78,13 @@
 (load "~/.emacs.d/init/go")
 (load "~/.emacs.d/init/perl")
 (load "~/.emacs.d/init/lisp")
-(load "~/.emacs.d/init/scheme")
+;(load "~/.emacs.d/init/scheme")
 (load "~/.emacs.d/init/racket")
 ;(load "~/.emacs.d/init/clojure")
 ;(load "~/.emacs.d/init/lua")
 ;(load "~/.emacs.d/init/erlang")
 (load "~/.emacs.d/init/haskell.el")
-(load "~/.emacs.d/init/ocaml.el")
+;(load "~/.emacs.d/init/ocaml.el")
 (load "~/.emacs.d/init/sml")
 (load "~/.emacs.d/init/org-mode")
 ;(load "~/.emacs.d/init/forth")

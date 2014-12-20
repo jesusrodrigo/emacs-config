@@ -1,10 +1,13 @@
 (require 'go-mode)
 
 (require 'go-eldoc)
+(require 'company)
+(require 'company-go)
 
-(require 'auto-complete)
-(require 'go-autocomplete)
-(require 'auto-complete-config)
+(setq company-tooltip-limit 20)                      ; bigger popup window
+(setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
+(setq company-echo-delay 0)                          ; remove annoying blinking
+(setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
 
 (load "$GOPATH/src/code.google.com/p/go.tools/cmd/oracle/oracle.el")
 
@@ -30,6 +33,10 @@
   ;; Godoc
   (local-set-key (kbd "C-c C-k") 'godoc)
 
+  ;; Company
+  (set (make-local-variable 'company-backends) '(company-go))
+  (company-mode 1)
+  
   ;; Other
   (autopair-mode 1)
   (go-eldoc-setup)
