@@ -9,7 +9,7 @@
 (setq company-echo-delay 0)                          ; remove annoying blinking
 (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
 
-(load "$GOPATH/src/code.google.com/p/go.tools/cmd/oracle/oracle.el")
+(load "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
 
 ;; Hooks
 (add-hook 'go-mode-hook 'my-go-hook)
@@ -43,6 +43,7 @@
   (go-oracle-mode)
   (setq tab-width 8)
   (setq show-trailing-whitespace t)
+  (setq gofmt-command "goimports")
   (local-set-key (kbd "M-.") 'godef-jump))
 
 ;; helper function
