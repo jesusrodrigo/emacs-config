@@ -74,6 +74,7 @@
 (load "~/.emacs.d/init/c-mode")
 (load "~/.emacs.d/init/go")
 (load "~/.emacs.d/init/perl")
+(load "~/.emacs.d/init/puppet")
 ;(load "~/.emacs.d/init/lisp")
 ;(load "~/.emacs.d/init/scheme")
 (load "~/.emacs.d/init/racket")

@@ -33,6 +33,7 @@
   (go-eldoc-setup)
   (setq tab-width 8)
   (setq show-trailing-whitespace t)
+  (setq gofmt-command "goimports")
   (local-set-key (kbd "M-.") 'godef-jump))
 
 ;; helper function
