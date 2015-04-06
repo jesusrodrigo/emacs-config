@@ -51,3 +51,4 @@
 (set-face-background 'merlin-type-face "#88FF44")
 
 (setq merlin-use-auto-complete-mode t)
+(setq merlin-command 'opam)

@@ -54,7 +54,7 @@
 ;; Finder
 (global-set-key [f16] '(lambda ()
 			 (interactive)
-			 (shell-command (concat "open " default-directory))))
+			 (shell-command (concat "xdg-open " default-directory))))
 
 ;; Abrir y cerrar fichero
 (global-set-key [f4] 'find-file)
@@ -78,7 +78,7 @@
 (load "~/.emacs.d/init/go")
 (load "~/.emacs.d/init/perl")
 (load "~/.emacs.d/init/lisp")
-;(load "~/.emacs.d/init/scheme")
+(load "~/.emacs.d/init/scheme")
 (load "~/.emacs.d/init/racket")
 ;(load "~/.emacs.d/init/clojure")
 ;(load "~/.emacs.d/init/lua")
@@ -89,6 +89,7 @@
 (load "~/.emacs.d/init/org-mode")
 ;(load "~/.emacs.d/init/forth")
 ;(load "~/.emacs.d/init/factor")
+(load "~/.emacs.d/init/rust")
 (load "~/.emacs.d/init/tex")
 (load "~/.emacs.d/init/irc")
 ;(load "~/.emacs.d/init/yasnippet.el")
