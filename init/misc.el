@@ -36,8 +36,15 @@
 (transient-mark-mode 1)
 (tool-bar-mode 0)
 
-;(msb-mode 1)
-
 ;;; mic paren
 (require 'mic-paren)
 (paren-activate)
+
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-use-filename-at-point 'guess)
+;(setq ido-file-extensions-order '(".org" ".txt" ".py" ".emacs" ".xml" ".el" ".ini" ".cfg" ".cnf"))
+(ido-mode t)
+(require 'ido-vertical-mode)
+(ido-vertical-mode t)

@@ -2,4 +2,3 @@
           (lambda ()
             (setq show-trailing-whitespace t)
             (autopair-mode 1)))
-

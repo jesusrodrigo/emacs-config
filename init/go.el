@@ -40,7 +40,6 @@
   ;; Other
   (autopair-mode 1)
   (go-eldoc-setup)
-  (go-oracle-mode)
   (setq tab-width 8)
   (setq show-trailing-whitespace t)
   (setq gofmt-command "goimports")
