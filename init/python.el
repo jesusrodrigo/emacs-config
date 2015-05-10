@@ -3,6 +3,6 @@
           #'(lambda ()
               (define-key python-mode-map "\C-m" 'newline-and-indent)))
 
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
-(setq jedi:use-shortcuts t)
+;; (add-hook 'python-mode-hook 'jedi:setup)
+;; (setq jedi:complete-on-dot t)
+;; (setq jedi:use-shortcuts t)

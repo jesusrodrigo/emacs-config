@@ -17,9 +17,10 @@
              (setq indent-tabs-mode nil)
              (paredit-mode 1)
              (eldoc-mode 1)
+             (company-mode 1)
              (font-lock-add-keywords nil
-              '(("[][().]" . emacs-lisp-paren-face))
-              'append))))
+                                     '(("[][().]" . emacs-lisp-paren-face))
+                                     'append))))
 (add-hook 'lisp-interaction-mode-hook
           (function
            (lambda () (paredit-mode 0))))

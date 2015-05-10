@@ -63,9 +63,6 @@
 ;; Buffer switch (lo tengo que cambiar de sitio...)
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
-;; Company
-(add-hook 'after-init-hook 'global-company-mode)
-
 ;; Subfiles
 (load "~/.emacs.d/init/eshell")
 (load "~/.emacs.d/init/dired")

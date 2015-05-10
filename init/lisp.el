@@ -13,11 +13,12 @@
 (defun sbcl () (interactive) (slime 'sbcl))
 
 ;; slime-contrib
-(slime-setup '(slime-banner
-               slime-asdf
-               slime-fancy
-               slime-indentation
-               slime-compiler-notes-tree))
+;; (slime-setup '(slime-banner
+;;                slime-asdf
+;;                slime-fancy
+;;                slime-indentation
+;;                slime-compiler-notes-tree))
+(slime-setup '(slime-fancy))
 
 (setq slime-complete-symbol*-fancy t)
 (setq slime-complete-symbol-function 'slime-complete-symbol*)
