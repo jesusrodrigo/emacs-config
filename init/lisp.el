@@ -18,7 +18,8 @@
 ;;                slime-fancy
 ;;                slime-indentation
 ;;                slime-compiler-notes-tree))
-(slime-setup '(slime-fancy))
+(slime-setup '(slime-fancy
+               slime-asdf))
 
 (setq slime-complete-symbol*-fancy t)
 (setq slime-complete-symbol-function 'slime-complete-symbol*)
