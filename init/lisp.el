@@ -1,12 +1,12 @@
 ;;; Common-Lisp
 (load (expand-file-name "~/local/quicklisp/slime-helper.el"))
-(setq inferior-lisp-program "ccl")
+(setq inferior-lisp-program "sbcl")
 
 ;; Slime
 (require 'slime)
 
 (setq slime-lisp-implementations
-      '((sbcl ("sbcl") :coding-system utf-8-unix)
+      '((sbcl ("/home/jesus/local/sbcl/bin/sbcl") :coding-system utf-8-unix)
         (ccl ("ccl") :coding-system utf-8-unix)))
 
 (defun ccl () (interactive) (slime 'ccl))

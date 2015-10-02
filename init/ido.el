@@ -3,7 +3,7 @@
 
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
-(setq ido-use-filename-at-point t)
+(setq ido-use-filename-at-point nil)
 (setq ido-create-new-buffer 'prompt)
 
 (ido-mode 1)

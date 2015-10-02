@@ -4,3 +4,5 @@
 ;; (add-to-list 'Info-default-directory-list "/home/jesus/local/guile/share/info/")
 (add-to-list 'Info-default-directory-list "/home/jesus/local/gambit/current/info/")
 (add-to-list 'Info-default-directory-list "/home/jesus/local/vicare/share/info/")
+
+(setq make-backup-files nil)

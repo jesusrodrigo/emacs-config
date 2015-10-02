@@ -36,9 +36,12 @@
 (transient-mark-mode 1)
 (tool-bar-mode 0)
 
-;;; rainbow delimiters
+;; ;;; rainbow delimiters
 ;; (require 'rainbow-delimiters)
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+;; (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(require 'mic-paren)
+(paren-activate)
+
 
 (require 'ido)
 (setq ido-enable-flex-matching t)

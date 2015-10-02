@@ -7,4 +7,3 @@
                             (tool-bar-lines . 0)))
 
 (scroll-bar-mode -1)
-(fullscreen-mode 1)
