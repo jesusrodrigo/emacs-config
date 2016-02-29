@@ -50,3 +50,8 @@
   "run current buffer"
   (interactive)
   (compile (concat "go run " (buffer-file-name))))
+
+(defun gobuild ()
+  "build current package"
+  (interactive)
+  (compile (concat "go build")))
