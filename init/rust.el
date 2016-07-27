@@ -14,7 +14,7 @@
 
 ;; Racer
 (setq racer-cmd "~/.cargo/bin/racer")
-(setq racer-rust-src-path "/home/jesus/Documents/src/rustc-1.7.0/src/")
+(setq racer-rust-src-path "/home/jesus/Documents/src/rustc-1.8.0/src/")
 
 
 (defun my-racer-hook ()
