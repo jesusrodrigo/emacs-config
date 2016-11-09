@@ -12,9 +12,12 @@
 ;;; Paths elisp
 (let ((top (expand-file-name "~/.emacs.d/libraries")))
   (add-to-list 'load-path top)
-  (dolist (f (directory-files top t))
+  (dolist (f (directory-files top t directory-files-no-dot-files-regexp))
     (cond ((file-directory-p f)
 	   (add-to-list 'load-path f)))))
+
+;; Disable .tramp_history files
+(setq tramp-histfile-override t)
 
 ;; Acentos
 (require 'iso-transl)
@@ -52,8 +55,10 @@
 ;; Subfiles
 (load "~/.emacs.d/init/eshell")
 (load "~/.emacs.d/init/dired")
-; prog modes
+;; prog modes
+(load "~/.emacs.d/init/sh")
 (load "~/.emacs.d/init/python")
+(load "~/.emacs.d/init/php")
 (load "~/.emacs.d/init/paredit")
 (load "~/.emacs.d/init/emacs-lisp")
 (load "~/.emacs.d/init/css")
@@ -61,14 +66,14 @@
 (load "~/.emacs.d/init/go")
 (load "~/.emacs.d/init/perl")
 (load "~/.emacs.d/init/lisp")
-;;(load "~/.emacs.d/init/scheme")
-(load "~/.emacs.d/init/racket")
-;(load "~/.emacs.d/init/geiser")
+;(load "~/.emacs.d/init/scheme")
+(load "~/.emacs.d/init/geiser")
+;(load "~/.emacs.d/init/racket")
 (load "~/.emacs.d/init/puppet")
 ;(load "~/.emacs.d/init/clojure")
 ;(load "~/.emacs.d/init/lua")
 ;(load "~/.emacs.d/init/erlang")
-(load "~/.emacs.d/init/haskell.el")
+(load "~/.emacs.d/init/haskell")
 ;(load "~/.emacs.d/init/ocaml.el")
 (load "~/.emacs.d/init/sml")
 (load "~/.emacs.d/init/org-mode")

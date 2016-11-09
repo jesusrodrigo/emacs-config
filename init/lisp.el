@@ -41,6 +41,7 @@
 
 (add-hook 'lisp-mode-hook
           (lambda ()
+            (setq tab-always-indent 'complete)
             (define-key slime-mode-map (kbd "TAB") 'slime-indent-and-complete-symbol)
             (paredit-mode 1)))
 
