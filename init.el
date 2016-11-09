@@ -78,7 +78,7 @@
 (load "~/.emacs.d/init/sml")
 (load "~/.emacs.d/init/org-mode")
 ;(load "~/.emacs.d/init/forth")
-;(load "~/.emacs.d/init/factor")
+(load "~/.emacs.d/init/factor")
 (load "~/.emacs.d/init/rust")
 (load "~/.emacs.d/init/tex")
 (load "~/.emacs.d/init/irc")

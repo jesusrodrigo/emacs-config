@@ -6,6 +6,7 @@
   (define-key rust-mode-map "\r" 'newline-and-indent)
   (define-key rust-mode-map "\n" 'newline)
   (racer-mode 1)
+  (cargo-minor-mode 1)
   ;; Other
   (cargo-minor-mode 1)
   (autopair-mode 1)
@@ -15,11 +16,12 @@
 
 ;; Racer
 (setq racer-cmd "~/.cargo/bin/racer")
-(setq racer-rust-src-path "/home/jesus/Documents/src/rustc-1.11.0/src/")
+(setq racer-rust-src-path "/home/jesus/Documents/src/rustc-1.12.1/src/")
 
 (defun my-racer-hook ()
   (define-key racer-mode-map (kbd "TAB") #'company-indent-or-complete-common)
   (define-key racer-mode-map (kbd "C-c C-d") #'racer-describe)
+  (auto-composition-mode 1)
   (setq company-tooltip-align-annotations t)
   (company-mode 1)
   (eldoc-mode 1))

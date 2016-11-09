@@ -1,5 +1,5 @@
-(setq geiser-active-implementations '(guile racket))
-(setq geiser-default-implementation 'guile)
+(setq geiser-active-implementations '(guile racket chez))
+(setq geiser-default-implementation 'racket)
 (setq geiser-mode-smart-tab-p t)
 (defun my-scheme-hook ()
   (paredit-mode 1))
