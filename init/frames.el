@@ -17,5 +17,8 @@
                                  frame-name
                                  "\""))))
 
-(if (window-system)
-    (set-selected-frame-dark))
+;; (if (window-system)
+;;     (set-selected-frame-dark))
+
+(add-to-list 'default-frame-alist '(font . "-*-Source Code Pro-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1"))
+(set-face-attribute 'default t :font "-*-Source Code Pro-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")

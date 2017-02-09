@@ -6,6 +6,13 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;;; macOS shit
+(when (eq window-system 'ns)
+  (setq ns-right-command-modifier 'nxone
+        ns-right-alternate-modifier 'none
+        ns-command-modifier 'meta
+        ns-alternate-modifier 'super))
+
 ;;; Browser
 (setq browse-url-browser-function 'browse-url-xdg-open)
 
@@ -38,7 +45,6 @@
 
 (require 'mic-paren)
 (paren-activate)
-
 
 (require 'ido)
 (setq ido-enable-flex-matching t)
