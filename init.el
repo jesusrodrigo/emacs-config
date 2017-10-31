@@ -20,7 +20,7 @@
 (setq tramp-histfile-override t)
 
 ;; Acentos
-(require 'iso-transl)
+;; (require 'iso-transl)
 ;; Variables de entorno... package.el modifica el Info
 (load "~/.emacs.d/init/envvars")
 
@@ -28,6 +28,11 @@
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
 			 ("melpa" . "https://melpa.milkbox.net/packages/")))
 (package-initialize)
+
+;; (require 'use-package)
+;; (require 'bind-key)
+;; (use-package company-shell
+;;   :ensure t)
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
@@ -39,15 +44,6 @@
 (load "~/.emacs.d/init/frames")
 (load "~/.emacs.d/init/ido")
 (load "~/.emacs.d/init/gnus")
-
-;; Finder
-(global-set-key [f16] '(lambda ()
-			 (interactive)
-			 (shell-command (concat "xdg-open " default-directory))))
-
-;; Abrir y cerrar fichero
-(global-set-key [f4] 'find-file)
-(global-set-key [C-f4] 'kill-buffer)
 
 ;; Buffer switch (lo tengo que cambiar de sitio...)
 (global-set-key (kbd "C-x C-b") 'bs-show)
@@ -66,8 +62,8 @@
 (load "~/.emacs.d/init/go")
 (load "~/.emacs.d/init/perl")
 (load "~/.emacs.d/init/lisp")
-;(load "~/.emacs.d/init/racket")
 (load "~/.emacs.d/init/geiser")
+(load "~/.emacs.d/init/racket")
 (load "~/.emacs.d/init/puppet")
 ;(load "~/.emacs.d/init/clojure")
 ;(load "~/.emacs.d/init/lua")

@@ -32,11 +32,12 @@
 ;;                 ("\\.system$" . lisp-mode))
 ;;               auto-mode-alist))
 
-;; (add-hook 'lisp-mode-hook
-;;           (lambda ()
-;;             (setq tab-always-indent 'complete)
-;;             (define-key slime-mode-map (kbd "TAB") 'slime-indent-and-complete-symbol)
-;;             (paredit-mode 1)))
+(add-hook 'lisp-mode-hook
+          (lambda ()
+            (setq tab-always-indent 'complete)
+            (define-key sly-mode-map (kbd "TAB") 'complete-symbol)
+            (paredit-mode 1)
+            ))
 
 (global-set-key "\C-cs" sly-selector-map)
 ;; (global-set-key [f2] 'slime-selector)

@@ -8,7 +8,7 @@
 
 ;;; macOS shit
 (when (eq window-system 'ns)
-  (setq ns-right-command-modifier 'nxone
+  (setq ns-right-command-modifier 'none
         ns-right-alternate-modifier 'none
         ns-command-modifier 'meta
         ns-alternate-modifier 'super))
@@ -46,11 +46,11 @@
 (require 'mic-paren)
 (paren-activate)
 
-(require 'ido)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-;(setq ido-use-filename-at-point 'guess)
-;(setq ido-file-extensions-order '(".org" ".txt" ".py" ".emacs" ".xml" ".el" ".ini" ".cfg" ".cnf"))
-(ido-mode t)
-(require 'ido-vertical-mode)
-(ido-vertical-mode t)
+;; (require 'ido)
+;; (setq ido-enable-flex-matching t)
+;; (setq ido-everywhere t)
+;; ;(setq ido-use-filename-at-point 'guess)
+;; ;(setq ido-file-extensions-order '(".org" ".txt" ".py" ".emacs" ".xml" ".el" ".ini" ".cfg" ".cnf"))
+;; (ido-mode t)
+;; (require 'ido-vertical-mode)
+;; (ido-vertical-mode t)

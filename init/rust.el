@@ -15,7 +15,7 @@
 
 ;;; Racer
 (setq racer-cmd "~/.cargo/bin/racer")
-;; (setq racer-rust-src-path "/home/jesus/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src")
+(setq racer-rust-src-path "/home/jesus/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src")
 
 (defun my-racer-hook ()
   (define-key racer-mode-map (kbd "TAB") #'company-indent-or-complete-common)
