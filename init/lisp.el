@@ -32,12 +32,19 @@
 ;;                 ("\\.system$" . lisp-mode))
 ;;               auto-mode-alist))
 
-(add-hook 'lisp-mode-hook
+(add-hook 'sly-mode-hook
           (lambda ()
             (setq tab-always-indent 'complete)
             (define-key sly-mode-map (kbd "TAB") 'complete-symbol)
             (paredit-mode 1)
-            ))
+            (sly-company-mode 1)))
+
+(add-to-list 'company-backends 'sly-company)
+
+(define-key company-active-map (kbd "\C-n") 'company-select-next)
+(define-key company-active-map (kbd "\C-p") 'company-select-previous)
+(define-key company-active-map (kbd "\C-d") 'company-show-doc-buffer)
+(define-key company-active-map (kbd "M-.") 'company-show-location)
 
 (global-set-key "\C-cs" sly-selector-map)
 ;; (global-set-key [f2] 'slime-selector)
