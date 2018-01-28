@@ -63,7 +63,7 @@
 (load "~/.emacs.d/init/perl")
 (load "~/.emacs.d/init/lisp")
 (load "~/.emacs.d/init/geiser")
-(load "~/.emacs.d/init/racket")
+;(load "~/.emacs.d/init/racket")
 (load "~/.emacs.d/init/puppet")
 ;(load "~/.emacs.d/init/clojure")
 ;(load "~/.emacs.d/init/lua")
